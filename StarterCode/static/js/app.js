@@ -75,7 +75,12 @@ function showBubble(name) {
                 x: sample.otu_ids,
                 y: sample.sample_values,
                 text: sample.otu_labels,
-                type: 'bubble'
+                type: 'scatter',
+                mode: 'markers',
+  marker: {
+    size: sample.sample_values,
+    color: sample.otu_ids,
+  }
             }
         ];
 
